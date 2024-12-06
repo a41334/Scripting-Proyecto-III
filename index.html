@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <br></br>
+        <h2>Scripting | Proyecto III</h2>
+        <h1>Blockchain</h1>
+        <div class="formulario">
+            <label>Primer Nombre: <input type="text" id="primerNombre"></label><br>
+            <label>Segundo Nombre: <input type="text" id="segundoNombre" placeholder="N/A si está vacío"></label><br>
+            <label>Primer Apellido: <input type="text" id="primerApellido"></label><br>
+            <label>Segundo Apellido: <input type="text" id="segundoApellido"></label><br>
+            <button id="generar" onclick="generarBlockchain()">Generar Blockchain</button>
+        </div>
+        <div class="loading" id="loading" hidden>
+            <div class="spinner"></div>
+            <p>Generando blockchain, por favor espera...</p>
+        </div>
+        <div id="blockchain"></div>
+        <br></br>
+    </div>
+    <script src="blockchain.js"></script>
+</body>
+</html>
